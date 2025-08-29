@@ -14,5 +14,34 @@ module.exports = {
         message: '用户注册失败',
         result: ''
     },
-    // 你可以继续扩展其他错误类型
+    userDoesNotExists: {
+        code: '10004',
+        message: '用户不存在',
+        result: ''
+    },
+    userLoginError: {
+        code: '10005',
+        message: '用户登录失败',
+        result: ''
+    },
+    invalidPassword: {
+        code: '10006',
+        message: '密码不匹配',
+        result: ''
+    },
+    FailedPassword: {
+        code: '10007',
+        message: '修改密码失败',
+        result: ''
+    },
+    tokenExpiredError: {
+        code: '10101',
+        message: 'token 已过期',
+        result: ''
+    },
+    jsonWebTokenExpiredError:{
+        code: '10102',
+        message: '无效的 token',
+        result: ''
+    }
 }

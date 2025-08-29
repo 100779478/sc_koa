@@ -1,4 +1,4 @@
-const {DataType, DataTypes} = require('sequelize');
+const {DataTypes} = require('sequelize');
 
 const seq = require('../db/seq')
 
@@ -26,7 +26,7 @@ const User = seq.define('sc_user', {
     // timestamps: false,// 是否生成时间戳
 })
 
-// 强制同步数据库
-User.sync({force: true})
+// 强制同步数据库 force:true
+User.sync({force: false})
 
 module.exports = User
