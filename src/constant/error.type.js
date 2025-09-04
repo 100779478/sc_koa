@@ -39,9 +39,29 @@ module.exports = {
         message: 'token 已过期',
         result: ''
     },
-    jsonWebTokenExpiredError:{
+    jsonWebTokenExpiredError: {
         code: '10102',
         message: '无效的 token',
         result: ''
-    }
+    },
+    hasNotAdminPermission: {
+        code: '10103',
+        message: '权限不足',
+        result: ''
+    },
+    FileUploadError: {
+        code: '10201',
+        message: '图片上传失败',
+        result: ''
+    },
+    FileTypeError: {
+        code: '10202',
+        message: '不支持的文件格式',
+        result: ''
+    },
+    goodsFormatError: {
+        code: '10203',
+        message: '商品参数格式校验失败',
+        result: ''
+    },
 }

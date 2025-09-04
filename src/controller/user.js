@@ -68,8 +68,8 @@ class UserController {
         const id = ctx.state.user.id
         const password = ctx.request.body.password
         // 操作数据库
-        // 返回结果
         if (await updateById({id, password})) {
+            // 返回结果
             ctx.body = {
                 code: '0',
                 message: '修改密码成功',
