@@ -64,4 +64,34 @@ module.exports = {
         message: '商品参数格式校验失败',
         result: ''
     },
+    createGoodsFailed: {
+        code: '10204',
+        message: '添加商品失败',
+        result: ''
+    },
+    goodsIsNotUnique: {
+        code: '10205',
+        message: '商品名称重复',
+        result: ''
+    },
+    updateGoodsFailed: {
+        code: '10206',
+        message: '更新商品信息失败',
+        result: ''
+    },
+    removeGoodsFailed: {
+        code: '10207',
+        message: '删除商品失败',
+        result: ''
+    },
+    canNotFoundGoods:{
+        code: '10208',
+        message: '商品不存在或已删除',
+        result: ''
+    },
+    canNotFindGoodList:{
+        code: '10209',
+        message: '获取商品列表失败',
+        result: ''
+    }
 }

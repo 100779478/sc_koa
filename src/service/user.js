@@ -16,6 +16,14 @@ class UserService {
         return res.dataValues
     }
 
+    /**
+     * 更新用户信息
+     * @param id
+     * @param user_name
+     * @param password
+     * @param is_admin
+     * @returns {Promise<boolean>}
+     */
     async updateById({id, user_name, password, is_admin}) {
         const whereOpt = {id}
         const newUser = {}
