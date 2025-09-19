@@ -1,6 +1,6 @@
 const Router = require('koa-router')
 
-const {add, getCarts, update} = require('../controller/cart')
+const {add, getCarts, update, remove, selectAll,unSelectAll} = require('../controller/cart')
 const {auth} = require("../middleware/auth");
 const {validator} = require("../middleware/cart");
 
@@ -25,5 +25,19 @@ router.patch('/:id', auth, validator({
         required: false
     }
 }), update)
+
+// 删除购物车
+router.delete('/', auth, validator({
+    ids: {
+        type: 'array',
+        required: true
+    }
+}), remove)
+
+// 全选
+router.post('/selectAll', auth, selectAll)
+
+// 全不选
+router.post('/unSelectAll', auth, unSelectAll)
 
 module.exports = router

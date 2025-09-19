@@ -98,5 +98,10 @@ module.exports = {
         code: '10301',
         message: '购物车参数不符合格式',
         result: ''
-    }
+    },
+    removeCartsFailed: {
+        code: '10207',
+        message: '删除购物车失败',
+        result: ''
+    },
 }

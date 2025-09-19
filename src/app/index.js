@@ -12,6 +12,7 @@ const app = new Koa();
 app.use(KoaBody.koaBody({
     // 配置可接收图片等格式
     multipart: true,
+    parsedMethods: ['DELETE', 'PUT', 'POST', 'PATCH'],
     formidable: {
         uploadDir: path.join(__dirname, '../uploads'),
         keepExtensions: true
