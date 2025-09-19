@@ -3,7 +3,7 @@ const {cartValidatorError} = require("../constant/error.type");
 const validator = (rules) => {
     return async (ctx, next) => {
         try {
-            ctx.verifyParams(rules)
+            await ctx.verifyParams(rules)
         } catch (err) {
             console.error('购物车参数不符合格式', err)
             cartValidatorError.result = err

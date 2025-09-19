@@ -100,8 +100,13 @@ module.exports = {
         result: ''
     },
     removeCartsFailed: {
-        code: '10207',
+        code: '10302',
         message: '删除购物车失败',
         result: ''
     },
+    addrValidatorError: {
+        code: '10401',
+        message: '地址参数不符合格式',
+        result: ''
+    }
 }
