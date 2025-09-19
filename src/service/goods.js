@@ -71,7 +71,6 @@ class GoodsService {
      * 查询所有商品列表
      * @param pageNumber
      * @param pageSize
-     * @returns {Promise<{dataList: Model<any, TModelAttributes>[], total: Promise<number>, pageNumber, pageSize}>}
      */
     async findAllGoods(pageNumber, pageSize) {
         // 或者可以使用 findAndCountAll 方法

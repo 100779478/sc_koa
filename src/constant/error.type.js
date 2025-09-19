@@ -84,14 +84,19 @@ module.exports = {
         message: '删除商品失败',
         result: ''
     },
-    canNotFoundGoods:{
+    canNotFoundGoods: {
         code: '10208',
         message: '商品不存在或已删除',
         result: ''
     },
-    canNotFindGoodList:{
+    canNotFindGoodList: {
         code: '10209',
         message: '获取商品列表失败',
+        result: ''
+    },
+    cartValidatorError: {
+        code: '10301',
+        message: '购物车参数不符合格式',
         result: ''
     }
 }
