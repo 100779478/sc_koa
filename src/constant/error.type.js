@@ -108,5 +108,20 @@ module.exports = {
         code: '10401',
         message: '地址参数不符合格式',
         result: ''
+    },
+    addrRemoveFailed: {
+        code: '10402',
+        message: '删除地址失败',
+        result: ''
+    },
+    orderFormatError: {
+        code: '10501',
+        message: '订单参数不符合格式',
+        result: ''
+    },
+    orderUpdateFailed: {
+        code: '10502',
+        message: '订单状态更新失败',
+        result: ''
     }
 }

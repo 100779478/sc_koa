@@ -88,6 +88,12 @@ class CartController {
         }
     }
 
+    /**
+     * 全选
+     * @param ctx
+     * @param next
+     * @returns {Promise<void>}
+     */
     async selectAll(ctx, next) {
         const user_id = ctx.state.user.id
         const res = await selectAllCarts(user_id)
@@ -101,6 +107,12 @@ class CartController {
         }
     }
 
+    /**
+     * 取消全选
+     * @param ctx
+     * @param next
+     * @returns {Promise<void>}
+     */
     async unSelectAll(ctx, next) {
         const user_id = ctx.state.user.id
         const res = await unSelectAllCarts(user_id)

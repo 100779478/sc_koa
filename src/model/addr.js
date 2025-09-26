@@ -31,7 +31,7 @@ const Addr = seq.define('sc_address', {
 })
 
 Addr.sync({
-    force: true,
+    force: false,
 })
 
 module.exports = Addr;
